@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main">
+      <h1>Text experiment</h1>
+      <input
+        type="text"
+        name="text"
+        id="input_text"
+        value=""
+        onkeyup="display()"
+      />
+      <div class="btns">
+        <button id="lower" onclick="Lower()">abc</button>
+        <button id="upper" onclick="Upper()">ABC</button>
+        <button id="underline" onclick="underLine()">uline</button>
+        <button id="linethrough" onclick="lineThrough()">linet</button>
+      </div>
+      <input type="text" value id="result" />
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
