@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <base href="https://www.w3schools.com/" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 contenteditable="true" spellcheck="true">HTMl Tags</h1>
+    <div class="main-content">
+      <div class="main">
+        <p>abbr tag and acronym tag both are same</p>
+        <abbr title="Apple Ball Cat"> A B C</abbr>
+        <hr />
+        <p>address tag .&lt;address.&gt;</p>
+        <address>
+          Contact
+          <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"
+            >Rohith Mail</a
+          >
+          visit us at : <br />
+          Example.com<br />
+          Box 564, Disneyland<br />
+          USA
+        </address>
+        <hr />
+        <p>area tag .&lt;area&gt;</p>
+        <img
+          src="./Image/computerimage.jpg"
+          alt="computer image"
+          usemap="#workspace"
+          class="areamap"
+        />
+        <map name="workspace">
+          <area
+            shape="rect"
+            coords="83,41,202,138"
+            href="https://unsplash.com/s/photos/computer"
+            alt="computer"
+          />
+          <hr />
+          <p>audio tag .&lt;audio&gt;</p>
+          <audio controls>
+            <source
+              src="./Image/[iSongs.info] 04 - Hukum.mp3"
+              type="audio/mp3"
+            />
+          </audio>
+          <hr />
+        </map>
+        <p>base tag it is used in head only.&lt;base &gt;</p>
+        <a href="tags/tag_base.asp">base tag</a>
+      </div>
+      <div class="main1">
+        <p>cite tag it is renders in italic text&lt;cite &gt;</p>
+        <p><cite>The Rohith</cite> CEO LB Company</p>
+        <hr />
+        <p>
+          &lt;code &gtThe tag is used to define a piece of computer code. The
+          content inside is displayed in the browser's default monospace font.;
+        </p>
+        <p>
+          The CSS <code>background-color</code> property defines the background
+          color of an element.
+        </p>
+        <hr />
+        <p>
+          ALL table related information present
+          <a href="./TableTagRelated.html">Table Tag</a>
+        </p>
+        <hr />
+        <p>
+          The &lt;datalist&gt; tag specifies a list of pre-defined options for
+          an &lt;input&gt; element. The &lt;datalist&gt; tag is used to provide
+          an "autocomplete" feature for &lt;input&gt; elements. Users will see a
+          drop-down list of pre-defined options as they input data;
+        </p>
+        <input list="browsers" name="browser" id="browser" />
+        <datalist id="browsers">
+          <option value="Edge">Edge</option>
+        </datalist>
+        <button class="btn">submit</button>
+        <hr />
+        <figure>
+          <p>&lt;figure&gt;and &lt;figcaptions&gt;</p>
+          <img src="./Image/subhash_bose.jpeg" alt="subhash_bose" />
+          <figcaption>Fig. Subhash Bose</figcaption>
+        </figure>
+      </div>
+      <div class="main2">
+        <p>
+          The &lt;detail&gt; tag specifies additional details that the user can
+          open and close on demand. The &lt;detail&gt; tag is often used to
+          create an interactive widget that the user can open and close. By
+          default, the widget is closed. When open, it expands, and displays the
+          content within. Any sort of content can be put inside the
+          &lt;detail&gt; tag. Tip: The &lt;summar&gt; tag is used in conjunction
+          with &lt;detail&gt; to specify a visible heading for the details.
+        </p>
+        <details>
+          <summary>Epcot Center</summary>
+          <p>
+            Epcot is a theme park at Walt Disney World Resort featuring exciting
+            attractions, international pavilions, award-winning fireworks and
+            seasonal special events.
+          </p>
+        </details>
+        <hr />
+        <p>&lt;video Tag&gt;</p>
+        <video width="20%">
+          <source src="./Image/Untitled (2).mp4" />
+        </video>
+        <hr />
+      </div>
+      <div class="main3">
+        <!-- web page -->
+        <p>&lt;iframe&gt; it is use display web page within a web page</p>
+        <iframe src="./TableTagRelated.html" frameborder="1"></iframe>
+        <hr />
+        <!-- you tude video -->
+        <p>You Tude</p>
+        <iframe
+          height="200"
+          src="https://www.youtube.com/embed/IGet_banZ6Q?si=rlN7K3z5ez2ndtkk"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+        <hr />
+        <p>&lt;embed&gt; is like &lt;iframe&gt; tag</p>
+        <embed src="https://youtu.be/aJilv0lCvD0?t=20" type="video" />
+        <hr />
+      </div>
+    </div>
+  </body>
+</html>
