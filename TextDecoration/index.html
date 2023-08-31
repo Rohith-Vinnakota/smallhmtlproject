@@ -8,8 +8,10 @@
   </head>
   <body>
     <div class="main">
-      <h1>Text experiment</h1>
-      <input
+      <div class="content">
+
+        <h1>Text Experiment</h1>
+        <input
         type="text"
         name="text"
         id="input_text"
@@ -17,13 +19,14 @@
         onkeyup="display()"
       />
       <div class="btns">
-        <button id="lower" onclick="Lower()">abc</button>
-        <button id="upper" onclick="Upper()">ABC</button>
-        <button id="underline" onclick="underLine()">uline</button>
-        <button id="linethrough" onclick="lineThrough()">linet</button>
+        <button id="lower" class="btn" onclick="Lower()">abc</button>
+        <button id="upper" class="btn" onclick="Upper()">ABC</button>
+        <button id="underline" class="btn" onclick="underLine() " style="text-decoration: underline;">ABC</button>
+        <button id="linethrough" class="btn"  onclick="lineThrough()" style="text-decoration: line-through;">ABC</button>
       </div>
       <input type="text" value id="result" />
     </div>
+  </div>
     <script src="./index.js"></script>
   </body>
 </html>
