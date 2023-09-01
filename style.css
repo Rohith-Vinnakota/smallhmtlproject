@@ -4,6 +4,46 @@ body {
   background-color: #0e1111;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
+.nav{
+  width: 100%;
+  position:sticky;
+  top:0;
+  z-index: 1;
+  box-sizing: border-box;
+  padding-left:30px;
+  background-color: #183D3D;
+  display: flex;
+  flex-direction: row;
+ 
+}
+.nav .logo p{ 
+  font-size: 1.3rem;
+}
+.nav .menu{
+  display: none;
+}
+.nav .fa-bars{
+  font-size: 1.7rem;
+  color: #b01c33;
+  margin-right: 20px;
+}
+.nav .navbar{
+  margin-left: auto;
+}
+.nav .navbar .items{
+  display: flex;
+  flex-direction: row;
+  padding-right: 50px;
+}
+.nav .navbar .items .item{
+  list-style: none;
+  padding-left:20px;
+}
+.nav .navbar .items .item a{
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: #b01c33;
+}
 h1 {
   color: white;
   text-align: center;
@@ -68,6 +108,58 @@ iframe {
   :is(.main, .main1, .main2, .main3) {
     width: 90%;
   } */
+  .nav {
+    padding: 0;
+    position: sticky;
+    top:0;
+    flex-direction: column;
+    position: relative;
+  }
+  .nav .logo{
+    padding-left: 20px;
+  }
+  .nav .navbar{
+    display:none;
+    width: 100%;
+    margin-left:0;
+    margin-right: auto;
+    transition: display 10.3s ease-in-out;
+  }
+  .nav .navbar p{
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #b01c33;
+    width:90%;
+  }
+  .nav .navbar.l{
+    display: block;
+  }
+  .nav .navbar .items{
+    flex-direction: column;
+    gap:20px;
+    min-height:69.6px;
+  }
+  .nav .menu{
+    position: absolute;
+    left:350px;
+    top:22px;
+    display: block;
+    
+  }
+  .nav .navbar .items{
+    padding: 0;
+    width: 97%;
+  }
+  .nav .navbar .items .item{
+    margin-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .nav .navbar .items .item:hover{
+    border-radius: 10px;
+background-color: #5C8374;
+  }
   audio{
     width:100%;
   }
