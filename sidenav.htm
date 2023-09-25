@@ -38,11 +38,14 @@
         .topitems ul{
             display: flex;
             flex-direction: row;
+            padding: 0;
             gap:20px;
             & li{
                 list-style: none;
+            & a{
+                text-decoration: none;
+               }
             }
-
         }
         .sidenav{
         background-color: #2C3E50;
@@ -51,17 +54,14 @@
             width: 200px;
             height: 100%;
             padding: 1px 0;
-            /* border: 2px solid #808080; */
             display: flex;
             flex-direction: column;
-            transition:display 10.2s ease;
         }
         .sidenav{
             display: block;
             width: 200px;
             .items ul li a{
-                display: inline-block;
-                
+                display: inline-block;   
             }
         }
         .fa-bars{
@@ -74,7 +74,6 @@
                 
             }
         }
-    
         .border{
             width: 90%;
             margin-inline: auto;
@@ -95,7 +94,7 @@
                 text-decoration: none;
              }
         }
-        .fa-solid{
+        :is(.fa-solid, .fa-regular){
             color: #C0C0C0;
             font-size: 14px;
             padding-right: 10px;
@@ -118,9 +117,9 @@
 <div class=".logo"> <i class="fa-solid fa-bars" id="toggle"></i>Rohith.dev</div>
 <div class="topitems">
     <ul>
-        <li>Project</li>
-        <li>Lincens</li>
-        <li>Bye</li>
+        <li><i class="fa-solid fa-file"></i><a href="">Project</a></li>
+        <li><i class="fa-regular fa-id-badge"></i><a href="">Licence</a></li>
+        <li> <i class="fa-solid fa-paper-plane"></i><a href="">Bye</a></li>
     </ul>
 </div>
         </nav>
