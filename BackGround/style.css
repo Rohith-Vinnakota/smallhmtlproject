@@ -1,0 +1,29 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+section{
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh;
+}
+section:nth-child(1){
+    background-image: url(/Image/Image1.jpg);
+    
+}
+section:nth-child(2){
+    background-image: url(/Image/Image2.jpg);
+    
+}
+section:nth-child(3){
+    background-image: url(/Image/Image3.jpg);
+    
+}
+.header h1{
+    margin: 0;
+    color:white;
+    
+}

@@ -1,0 +1,89 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding:0;
+   min-height: 100vh;
+   width: 100%;
+   background-color: #C0C0C0;
+}
+.section{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    position: relative  ;
+    width:200px;
+    height: 300px;
+}
+.card{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 1.2s ease;
+   
+}
+.card:hover{
+    transform: rotateY(180deg);
+}
+.fornt{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: orangered;
+    text-align: center;
+    border-radius: 20px;
+    color: black;
+    backface-visibility: hidden;
+}
+.fornt img{
+    border-radius: 20px;
+    max-width: 100%;
+    aspect-ratio:1/1;
+    height: 100%;
+    object-fit: cover;
+}
+.back{
+   
+    font-family: 'Croissant One', cursive;
+    position: absolute;
+    padding: 10px;
+    width: 100%;
+    height:100%;
+    background-color: #DAA520;  
+    border-radius: 20px;
+    color: black;
+    text-align: center;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+.setcolor{
+    background-color: #C0C0C0 !important;
+    color:#000000 !important;
+    text-align: center;
+    
+}
+#Image{
+    position: relative;
+
+}
+.Para{
+    font-family: 'Croissant One', cursive;
+    position: absolute;
+    z-index: 100;
+    bottom: 10px;
+    right: 0;
+    left: 0;
+    color: #C0C0C0;
+    font-size: 23px;
+}
+

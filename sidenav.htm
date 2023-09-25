@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/cf91e3a567.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            color: #C0C0C0;
+            box-sizing: border-box;
+            /* outline: 2px solid wheat; */
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+        }
+        .container{
+            width: 100%;
+            min-height: 100vh;
+        }
+        .topnav{
+            position: relative;
+            z-index: 10;
+          width: 100%;
+          padding: 0 10px;
+        min-height: 50px;
+        background-color: #2C3E50;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        }
+        .topitems {
+            margin-left: auto;
+    
+        }
+        .topitems ul{
+            display: flex;
+            flex-direction: row;
+            gap:20px;
+            & li{
+                list-style: none;
+            }
+
+        }
+        .sidenav{
+        background-color: #2C3E50;
+            position: relative;
+            z-index: 10;
+            width: 200px;
+            height: 100%;
+            padding: 1px 0;
+            /* border: 2px solid #808080; */
+            display: flex;
+            flex-direction: column;
+            transition:display 10.2s ease;
+        }
+        .sidenav{
+            display: block;
+            width: 200px;
+            .items ul li a{
+                display: inline-block;
+                
+            }
+        }
+        .fa-bars{
+            cursor: pointer;
+        }
+        .sidenav.clear{
+            width: fit-content;
+            .items ul li a{
+                display: none;
+                
+            }
+        }
+    
+        .border{
+            width: 90%;
+            margin-inline: auto;
+            border: 1px solid #C0C0C0;
+         }
+         .items ul{
+            padding: 0;
+         }
+       .items{
+        padding: 0 10px;
+       }
+        .items ul li{
+            list-style: none;
+            padding: 7px 0;
+            border-radius: 7px;
+            transition: all 0.5s ease;
+             & a{
+                text-decoration: none;
+             }
+        }
+        .fa-solid{
+            color: #C0C0C0;
+            font-size: 14px;
+            padding-right: 10px;
+            padding-left: 5px;
+        }
+        .items ul li:hover{
+            background-color:#808080;
+            color: #000000;
+            .fa-solid{
+                color: #000000;
+            }
+        }
+        
+    </style>
+    <title>Side Navbar</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="topnav">
+<div class=".logo"> <i class="fa-solid fa-bars" id="toggle"></i>Rohith.dev</div>
+<div class="topitems">
+    <ul>
+        <li>Project</li>
+        <li>Lincens</li>
+        <li>Bye</li>
+    </ul>
+</div>
+        </nav>
+<nav class="sidenav clear" id="menu">
+   
+    <div class="items">
+        <ul>
+            <li class="item"><i class="fa-solid fa-house"></i><a href="">Home</a></li>
+            <li class="item"> <i class="fa-solid fa-video"></i><a href="">Video</a></li>
+            <li class="item"> <i class="fa-solid fa-address-card"></i><a href="">About</a></li>
+            <li class="item"> <i class="fa-solid fa-gear"></i><a href="">Settings</a></li>
+        </ul>
+    </div>
+    <div class="border"></div>
+    <div class="items">
+        <ul>
+            <li class="item"><i class="fa-solid fa-house"></i><a href="">Home</a></li>
+            <li class="item"> <i class="fa-solid fa-video"></i><a href="">Video</a></li>
+            <li class="item"> <i class="fa-solid fa-address-card"></i><a href="">About</a></li>
+            <li class="item"> <i class="fa-solid fa-gear"></i><a href="">Settings</a></li>
+        </ul>
+    </div>
+    
+    <div class="border"></div>
+    <div class="items">
+        <ul>
+            <li class="item"><i class="fa-solid fa-house"></i><a href="">Home</a></li>
+            <li class="item"> <i class="fa-solid fa-video"></i><a href="">Video</a></li>
+            <li class="item"> <i class="fa-solid fa-address-card"></i><a href="">About</a></li>
+            <li class="item"> <i class="fa-solid fa-gear"></i><a href="">Settings</a></li>
+        </ul>
+    </div>
+</nav>
+    </div>
+    <script>
+        let toggle=document.getElementById('toggle');
+toggle.addEventListener('click',()=>{
+    let menu=document.getElementById('menu');
+    menu.classList.toggle('clear');
+})
+    </script>
+</body>
+</html>
