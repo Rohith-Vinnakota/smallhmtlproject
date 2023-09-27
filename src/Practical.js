@@ -35,6 +35,7 @@ function Practical() {
             return each.id !== listid;
         })
         setList(filterData);
+
     }
     /* edit  */
     const handleedit = (id) => {
