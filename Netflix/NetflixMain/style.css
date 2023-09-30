@@ -151,6 +151,18 @@ body{
     transform: translateY(0) translateX(1rem);
     scale:0.8;
 }
+.input span{
+    display: none;
+}
+.input{
+    .inputfield:invalid{
+        border-color: #e50914;
+    }
+    & span{
+        display: block;
+    }
+}
+
 .btn1{
     width:20%;
     height: 60px;
