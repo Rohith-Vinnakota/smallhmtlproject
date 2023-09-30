@@ -1,6 +1,5 @@
 *{
     box-sizing: border-box;
-    /* border:1px solid #e50914; */
 }
 html{
     scroll-behavior: smooth;
@@ -226,7 +225,7 @@ body{
     font-size: 1.5rem;
 }
 details .border{
-    padding-top: 5px;
+    margin-top: 5px;
     width:100%;
     border: 1px solid #000000;
 }
